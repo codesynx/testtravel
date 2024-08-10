@@ -57,26 +57,26 @@ const HeartButton: React.FC<HeartButtonProps> = ({
   };
 
   return (
-    <button
-      type="button"
-      onClick={handleClick}
-      className=" relative hover:opacity-80 transition cursor-pointer z-[5] "
-    >
-      <AiOutlineHeart
-        size={28}
-        className="
+		<button
+			type='button'
+			onClick={handleClick}
+			className=' relative hover:opacity-80 transition cursor-pointer z-[5] '
+		>
+			<AiOutlineHeart
+				size={28}
+				className='
           text-gray-50
           absolute
           -top-[2px]
           -right-[2px]
-        "
-      />
-      <AiFillHeart
-        size={24}
-        className={cn(hasFavorited ? "fill-rose-500" : "fill-neutral-500/70")}
-      />
-    </button>
-  );
+        '
+			/>
+			<AiFillHeart
+				size={24}
+				className={cn(hasFavorited ? 'fill-orange-500' : 'fill-neutral-500/70')}
+			/>
+		</button>
+	)
 };
 
 export default HeartButton;
